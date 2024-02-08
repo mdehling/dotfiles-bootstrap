@@ -1,0 +1,14 @@
+# dotfiles bootstrap
+Malte Dehling <mdehling@gmail.com>
+
+:gh-dotfiles:   https://github.com/mdehling/dotfiles
+
+ifdef::env-github[]
+:warning-caption: :warning:
+endif::[]
+
+This repository contains the 'bootstrap' script to install my
+link:{gh-dotfiles}[dotfiles] in a github codespaces environment.
+
+WARNING: The 'bootstrap' script will overwrite files in your home directory
+without asking.

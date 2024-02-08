@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+dotfiles() {
+    git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" "$@"
+}
+
+dotfiles init
+dotfiles remote add origin https://github.com/mdehling/dotfiles
+dotfiles fetch origin main
+
+dotfiles reset --hard origin/main
+
+dotfiles config status.showUntrackedFiles no
